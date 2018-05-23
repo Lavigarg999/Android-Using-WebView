@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         webView=(WebView)findViewById(R.id.webview);
         webView.loadUrl("Enter Your Url Here");
         WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
     }
 
     @Override
